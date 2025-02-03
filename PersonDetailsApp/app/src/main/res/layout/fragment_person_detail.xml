@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.PersonDetailFragment">
+
+    <ImageView
+        android:id="@+id/personImageView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:contentDescription="PERSON IMAGE"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/personNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+
+
