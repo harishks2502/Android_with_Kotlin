@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Details App</string>
+    <string name="underlined_text"><u>User Details</u></string>
+    <string name="underlined_text_01"><u>Todo Lists</u></string>
+</resources>
