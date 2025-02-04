@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.LivingRoomFragment">
+
+    <TextView
+        android:id="@+id/lightsSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Living Room"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchTelivision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Telivision"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:switchMinWidth="50dp"
+        app:switchPadding="25dp" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchCeilingFan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Ceiling Fan"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:switchMinWidth="50dp"
+        app:switchPadding="25dp" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchLights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Lights"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:switchMinWidth="50dp"
+        app:switchPadding="25dp" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchTableFan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Table Fan"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:switchMinWidth="50dp"
+        app:switchPadding="25dp" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchAC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Air Conditioner"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:switchMinWidth="50dp"
+        app:switchPadding="25dp" />
+
+    <TextView
+        android:id="@+id/thermostatControlSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="AC Temperature"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/thermostatValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="22°C"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/thermostatSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Adjust the thermostat temperature"
+        android:labelFor="@+id/thermostatValue"
+        android:padding="8dp"
+        android:value="22"
+        android:valueFrom="0"
+        android:valueTo="30"
+        app:thumbRadius="12dp"
+        app:trackHeight="4dp" />
+
+    <Button
+        android:id="@+id/saveOptionsButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Save Options"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.smarthomecontrollerapp.ui.DashboardFragment"
+        android:label="Smart Home Controller">
+        <action
+            android:id="@+id/action_dashboardFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_livingRoomFragment"
+            app:destination="@id/livingRoomFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.smarthomecontrollerapp.ui.UserProfileFragment"
+        android:label="User Profile" />
+
+    <fragment
+        android:id="@+id/livingRoomFragment"
+        android:name="com.example.smarthomecontrollerapp.ui.LivingRoomFragment"
+        android:label="Living Room"
+        tools:layout="@layout/fragment_living_room" >
+        <action
+            android:id="@+id/action_livingRoomFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+
+</navigation>
