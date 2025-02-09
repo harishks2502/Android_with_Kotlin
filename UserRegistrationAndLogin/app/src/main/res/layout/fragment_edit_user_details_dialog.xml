@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ui.EditUserDetailsDialogFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Edit User Details"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mailIDField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Mail ID"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editFullNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:autofillHints="fullName"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editUsernameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:autofillHints="username"
+        android:hint="Username"
+        android:inputType="text"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editPasswordField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:autofillHints="password"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Save Details"
+        android:textSize="18sp" />
+
+</LinearLayout>
