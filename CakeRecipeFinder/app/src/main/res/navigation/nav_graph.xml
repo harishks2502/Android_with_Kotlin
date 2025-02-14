@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/cakeListsFragment">
+
+    <fragment
+        android:id="@+id/cakeListsFragment"
+        android:name="com.example.cakerecipefinder.ui.CakeListsFragment"
+        android:label="Cake Lists"
+        tools:layout="@layout/fragment_cake_lists">
+        <action
+            android:id="@+id/action_cakeListsFragment_to_cakeRecipeFragment"
+            app:destination="@id/cakeRecipeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cakeRecipeFragment"
+        android:name="com.example.cakerecipefinder.ui.CakeRecipeFragment"
+        android:label="Cake Recipe"
+        tools:layout="@layout/fragment_cake_recipe">
+        <argument
+            android:name="selectedCakeList"
+            app:argType="com.example.cakerecipefinder.model.Meal" />
+        <action
+            android:id="@+id/action_cakeRecipeFragment_to_cakeListsFragment"
+            app:destination="@id/cakeListsFragment" />
+    </fragment>
+
+</navigation>
